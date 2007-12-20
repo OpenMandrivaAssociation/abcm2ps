@@ -8,6 +8,7 @@ Summary:	Converts ABC format music sheets into Postscript
 License:	GPL
 URL:		http://moinejf.free.fr
 Group:		Publishing
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://moinejf.free.fr/%{name}-%{version}.tar.bz2
 Patch0:		abcm2ps_makefile.patch
 
