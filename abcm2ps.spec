@@ -1,15 +1,15 @@
-%define version 4.12.28
+%define version 4.12.30
 %define release %mkrel 1
 
 Name:		abcm2ps
 Version:	%{version}
 Release:	%{release}
 Summary:	Converts ABC format music sheets into Postscript
-License:	GPL
-URL:		http://moinejf.free.fr
+License:	GPLv2+
+URL:		http://abcplus.sourceforge.net/
 Group:		Publishing
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Source:		http://moinejf.free.fr/%{name}-%{version}.tar.bz2
+Source:		%{name}-%{version}.tar.gz
 Patch0:		abcm2ps_makefile.patch
 
 %description
