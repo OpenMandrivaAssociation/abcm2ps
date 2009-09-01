@@ -1,5 +1,5 @@
 %define version 4.12.30
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:		abcm2ps
 Version:	%{version}
