@@ -1,5 +1,5 @@
-%define version 4.12.30
-%define release %mkrel 3
+%define version 5.9.6
+%define release %mkrel 1
 
 Name:		abcm2ps
 Version:	%{version}
@@ -9,7 +9,7 @@ License:	GPLv2+
 URL:		http://abcplus.sourceforge.net/
 Group:		Publishing
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Source:		%{name}-%{version}.tar.gz
+Source:		http://moinejf.free.fr/%{name}-%{version}.tar.gz
 Patch0:		abcm2ps_makefile.patch
 
 %description
@@ -30,11 +30,11 @@ under http://abcplus.sourceforge.net/.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
