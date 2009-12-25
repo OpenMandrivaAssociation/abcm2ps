@@ -1,4 +1,4 @@
-%define version 5.9.6
+%define version 5.9.7
 %define release %mkrel 1
 
 Name:		abcm2ps
