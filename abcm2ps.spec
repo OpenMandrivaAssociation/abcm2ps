@@ -1,11 +1,10 @@
 Name:		abcm2ps
-Version:	6.5.12
+Version:	6.5.15
 Release:	1
 Summary:	Converts ABC format music sheets into Postscript
 License:	GPLv2+
 URL:		http://abcplus.sourceforge.net/
 Group:		Publishing
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://moinejf.free.fr/%{name}-%{version}.tar.gz
 Patch0:		abcm2ps_makefile.patch
 
@@ -19,7 +18,6 @@ under http://abcplus.sourceforge.net/.
 
 %prep
 %setup -q
-
 %patch0 -p0
 
 %build
