@@ -28,7 +28,7 @@ under http://abcplus.sourceforge.net/.
 %make_install 
 
 %files
-%doc Changes License README *.abc *.txt sample3.eps
+%doc *.abc sample3.eps
 %{_bindir}/*
 %{_datadir}/abcm2ps
 
