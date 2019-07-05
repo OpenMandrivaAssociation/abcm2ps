@@ -1,7 +1,2 @@
-removed_sources:
-  abcm2ps-7.0.13.tar.gz: 09aec01a2b2ac2f65e7a50a2bd5a0489f8b48673
-  abcm2ps-7.5.2.tar.gz: 0b5febdc123c5aecfd6ee95a5af5783da15f2f94
-  abcm2ps-7.6.10.tar.gz: da7074b8ee79a8ef229c0c417eba956b4aedd435
-  abcm2ps-7.6.7.tar.gz: 5145da34cb28cfbf6d158cfd690c69f02beacc3b
 sources:
-  abcm2ps-7.8.14.tar.gz: a02a86d0c3065de1472582e195b6d4e6bfcea9a0
+  abcm2ps-8.14.4.tar.gz: e64daabdc532966eb16d1f6bcf5d391e93f47afa
