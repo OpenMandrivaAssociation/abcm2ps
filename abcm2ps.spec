@@ -29,10 +29,10 @@ under http://abcplus.sourceforge.net/.
 
 %files
 %doc README.md *.abc sample3.eps
-%{datadir}/doc/abcm2ps/examples/*
+%{_datadir}/doc/abcm2ps/examples/*
 %{_bindir}/*
 %{_datadir}/abcm2ps
-%{mandir}/man1/abcm2ps.1.xz
+%{_mandir}/man1/abcm2ps.1.xz
 
 
 
