@@ -6,7 +6,7 @@ License:	GPLv2+
 URL:		http://abcplus.sourceforge.net/
 Group:		Publishing
 Source0:	http://moinejf.free.fr/%{name}-%{version}.tar.gz
-@Patch0:		abcm2ps_makefile.patch
+#Patch0:		abcm2ps_makefile.patch
 
 %description
 abcm2ps is a package which converts music tunes from ABC format
