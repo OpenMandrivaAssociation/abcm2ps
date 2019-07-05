@@ -28,9 +28,11 @@ under http://abcplus.sourceforge.net/.
 %make_install 
 
 %files
-%doc *.abc sample3.eps
+%doc README.md *.abc sample3.eps
+%{datadir}/doc/abcm2ps/examples/*
 %{_bindir}/*
 %{_datadir}/abcm2ps
+%{mandir}/man1/abcm2ps.1.xz
 
 
 
