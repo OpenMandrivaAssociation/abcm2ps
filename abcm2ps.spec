@@ -20,7 +20,7 @@ under http://abcplus.sourceforge.net/.
 %setup -q
 
 %build
-%configure2 --enable-a4 --enable-deco-is-roll
+%configure --enable-a4 --enable-deco-is-roll
 %make_build
 
 %install
@@ -32,8 +32,3 @@ under http://abcplus.sourceforge.net/.
 %{_bindir}/*
 %{_datadir}/abcm2ps
 %{_mandir}/man1/abcm2ps.1.xz
-
-
-
-
-
