@@ -1,13 +1,12 @@
 Name:		abcm2ps
-Version:  8.14.7
+Version:	8.14.9
 Release:	1
 Summary:	Converts ABC format music sheets into Postscript
 License:	GPLv2+
-URL:		http://abcplus.sourceforge.net/
+URL:		https://github.com/leesavide/abcm2ps
 Group:		Publishing
-Source0:	http://moinejf.free.fr/%{name}-%{version}.tar.gz
+Source0:	https://github.com/leesavide/abcm2ps/archive/v%{version}/%{name}-%{version}.tar.gz
 #Patch0:		abcm2ps_makefile.patch
-
 BuildRequires:  pkgconfig(freetype2)
 BuildRequires:  pkgconfig(pangocairo)
 
@@ -20,10 +19,10 @@ it suitable for classical music. This extended format is documented
 under http://abcplus.sourceforge.net/.
 
 %prep
-%setup -q
+%autosetup -p1
+%configure --enable-a4 --enable-deco-is-roll
 
 %build
-%configure --enable-a4 --enable-deco-is-roll
 %make_build
 
 %install
