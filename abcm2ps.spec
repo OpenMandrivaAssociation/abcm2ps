@@ -1,5 +1,5 @@
 Name:		abcm2ps
-Version:	8.14.14
+Version:	8.14.15
 Release:	1
 Summary:	Converts ABC format music sheets into Postscript
 License:	GPLv2+
