@@ -1,11 +1,15 @@
+# Use of "bool" as variable name prevents from using newer C standards
+%global optflags %{optflags} -std=gnu11
+
 Name:		abcm2ps
-Version:	8.14.15
+# Latest version: https://chiselapp.com/user/moinejf/repository/abcm2ps/taglist
+Version:	8.14.17
 Release:	1
 Summary:	Converts ABC format music sheets into Postscript
 License:	GPLv2+
-URL:		https://github.com/leesavide/abcm2ps
+URL:		http://moinejf.free.fr/
 Group:		Publishing
-Source0:	https://github.com/leesavide/abcm2ps/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:	https://chiselapp.com/user/moinejf/repository/abcm2ps/tarball/v%{version}/download.tar.gz#/%{name}-%{version}.tar.gz
 #Patch0:		abcm2ps_makefile.patch
 BuildRequires:  pkgconfig(freetype2)
 BuildRequires:  pkgconfig(pangocairo)
@@ -19,8 +23,12 @@ it suitable for classical music. This extended format is documented
 under http://abcplus.sourceforge.net/.
 
 %prep
-%autosetup -p1
-%configure --enable-a4 --enable-deco-is-roll
+%autosetup -p1 -n download
+# Looks like autoconf, but isn't
+CC=%{__cc} CFLAGS="%{optflags}" ./configure \
+	--prefix=%{_prefix} \
+	--enable-a4 \
+	--enable-deco-is-roll
 
 %build
 %make_build
