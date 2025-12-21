@@ -11,6 +11,7 @@ URL:		http://moinejf.free.fr/
 Group:		Publishing
 Source0:	https://chiselapp.com/user/moinejf/repository/abcm2ps/tarball/v%{version}/download.tar.gz#/%{name}-%{version}.tar.gz
 #Patch0:		abcm2ps_makefile.patch
+BuildRequires:	make
 BuildRequires:  pkgconfig(freetype2)
 BuildRequires:  pkgconfig(pangocairo)
 
