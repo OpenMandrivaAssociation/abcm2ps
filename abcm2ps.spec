@@ -3,7 +3,7 @@
 
 Name:		abcm2ps
 # Latest version: https://chiselapp.com/user/moinejf/repository/abcm2ps/taglist
-Version:	8.14.17
+Version:	8.14.18
 Release:	1
 Summary:	Converts ABC format music sheets into Postscript
 License:	GPLv2+
